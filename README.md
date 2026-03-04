@@ -1,6 +1,8 @@
 配置环境：
 安装miniconda（如已安装miniconda或anaconda则跳过此步骤）。安装教程：https://blog.csdn.net/weixin_39787913/article/details/145529639  
-拉取代码 git clone https://github.com/ICIG/DGFNet.git 或者直接下载代码到本地，再上传到服务器。
+
+拉取代码 git clone https://github.com/ICIG/DGFNet.git 或者直接下载代码到本地，再上传到服务器。  
+
 快速安装：conda create --name 新环境名 --file spec-file.txt，如果安装途中报错或安装完成后训练模型报错，则按照以下步骤逐步安装。
 1. cd DGFNet
 2. conda create --name DGF python=3.8
