@@ -14,4 +14,4 @@
 8. pip install torchaudio-0.10.0+cu102-cp38-cp38-linux_x86_64.whl
 9. 使用如下命令安装detectron2  python -m pip install detectron2 -f \ https://dl.fbaipublicfiles.com/detectron2/wheels/cu102/torch1.10/index.html 安装文档页面如下https://detectron2-zhcn.readthedocs.io/zh-cn/latest/tutorials/install.html 
 10. pip install -U opencv-python
-11. 环境配置完成，后续如需要添加其他包，建议使用清华源下载，链接如下：https://pypi.tuna.tsinghua.edu.cn/simple。使用方法： pip install xxx -i https://pypi.tuna.tsinghua.edu.cn/simple
+11. 环境配置完成，后续如需要添加其他包，建议使用清华源下载，链接如下：https://pypi.tuna.tsinghua.edu.cn/simple  使用方法： pip install xxx -i https://pypi.tuna.tsinghua.edu.cn/simple
