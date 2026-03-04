@@ -25,6 +25,19 @@
 
 在视频帧中检测目标。对于 MUSIC 数据集，我们使用了 Ruohan 在其 Cosep 项目中训练的目标检测器（参见 [CoSep](https://github.com/rhgao/co-separation) 代码库）。对于 MUSIC-21 和 AVE，我们使用了预训练的 Detic 检测器（参见 Detic 代码库）来检测 MUSIC-21 数据集中的 10 多种乐器以及 AVE 数据集中的 28 个事件类别。每个视频的检测目标都存储在一个.npy 文件中。  
 
+训练模型：  
+在MUSIC数据集上训练  
+
+cd code  
+bash scripts/train_music.sh
+
+在MUSIC21数据集上训练  
+
+cd code  
+bash scripts/train_music21.sh
+
+训练结果在./data/ckpt中
+
 数据集目录结构  
 ```text
 data
@@ -68,17 +81,6 @@ data
         │   ├── STKXyBGSGyE.mp4.npy
         │   └── ...
         └── ...
-'''
 
-训练模型：  
-在MUSIC数据集上训练
-cd code
-bash scripts/train_music.sh
-
-在MUSIC21数据集上训练
-cd code
-bash scripts/train_music21.sh
-
-训练结果在./data/ckpt中
 
 
