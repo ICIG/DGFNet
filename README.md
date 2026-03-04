@@ -16,17 +16,6 @@
 10. pip install -U opencv-python
 11. 环境配置完成，后续如需要添加其他包，建议使用清华源下载，链接如下：https://pypi.tuna.tsinghua.edu.cn/simple  使用方法： pip install xxx -i https://pypi.tuna.tsinghua.edu.cn/simple
 
-训练模型：  
-在MUSIC数据集上训练
-cd code
-bash scripts/train_music.sh
-
-在MUSIC21数据集上训练
-cd code
-bash scripts/train_music21.sh
-
-训练结果在./data/ckpt中
-
 数据集预处理：  
 视频帧提取：运行scripts文件夹下的extract_frames.py  
 
@@ -79,3 +68,17 @@ data
         │   ├── STKXyBGSGyE.mp4.npy
         │   └── ...
         └── ...
+'''
+
+训练模型：  
+在MUSIC数据集上训练
+cd code
+bash scripts/train_music.sh
+
+在MUSIC21数据集上训练
+cd code
+bash scripts/train_music21.sh
+
+训练结果在./data/ckpt中
+
+
