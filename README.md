@@ -27,6 +27,12 @@ bash scripts/train_music21.sh
 
 训练结果在./data/ckpt中
 
+数据集预处理：  
+视频帧提取：运行scripts文件夹下的extract_frames.py
+音频提取：运行scripts文件夹下的extract_audio.py
+运动特征提取：运行scripts文件夹下的extract_motion.py
+MUSIC数据集的detection_results已提供
+
 数据集目录结构  
 ```text
 data
