@@ -34,7 +34,7 @@ bash scripts/train_music21.sh
 
 运动特征提取：运行scripts文件夹下的extract_motion.py  
 
-MUSIC数据集的detection_results已提供  
+在视频帧中检测目标。对于 MUSIC 数据集，我们使用了 Ruohan 在其 Cosep 项目中训练的目标检测器（参见 [CoSep](https://github.com/rhgao/co-separation) 代码库）。对于 MUSIC-21 和 AVE，我们使用了预训练的 Detic 检测器（参见 Detic 代码库）来检测 MUSIC-21 数据集中的 10 多种乐器以及 AVE 数据集中的 28 个事件类别。每个视频的检测目标都存储在一个.npy 文件中。  
 
 数据集目录结构  
 ```text
