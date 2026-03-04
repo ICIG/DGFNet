@@ -25,6 +25,8 @@ bash scripts/train_music.sh
 cd code
 bash scripts/train_music21.sh
 
+训练结果在./data/ckpt中
+
 数据集目录结构  
 ```text
 data
