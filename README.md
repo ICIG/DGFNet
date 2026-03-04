@@ -15,3 +15,55 @@
 9. 使用如下命令安装detectron2  python -m pip install detectron2 -f \ https://dl.fbaipublicfiles.com/detectron2/wheels/cu102/torch1.10/index.html 安装文档页面如下https://detectron2-zhcn.readthedocs.io/zh-cn/latest/tutorials/install.html 
 10. pip install -U opencv-python
 11. 环境配置完成，后续如需要添加其他包，建议使用清华源下载，链接如下：https://pypi.tuna.tsinghua.edu.cn/simple  使用方法： pip install xxx -i https://pypi.tuna.tsinghua.edu.cn/simple
+
+训练模型：  
+在MUSIC数据集上训练
+cd code
+bash scripts/train_music.sh
+
+在MUSIC21数据集上训练
+cd code
+bash scripts/train_music21.sh
+
+数据集目录结构  
+```text
+data
+├── audio
+│   ├── acoustic_guitar
+│   │   ├── M3dekVSwNjY.wav
+│   │   └── ...
+│   ├── trumpet
+│   │   ├── STKXyBGSGyE.wav
+│   │   └── ...
+│   └── ...
+│
+├── frames
+│   ├── acoustic_guitar
+│   │   ├── M3dekVSwNjY.mp4
+│   │   │   ├── 000001.jpg
+│   │   │   └── ...
+│   │   └── ...
+│   ├── trumpet
+│   │   ├── STKXyBGSGyE.mp4
+│   │   │   ├── 000001.jpg
+│   │   │   └── ...
+│   │   └── ...
+│   └── ...
+│
+├── detection_results
+│   ├── acoustic_guitar
+│   │   ├── M3dekVSwNjY.mp4.npy
+│   │   └── ...
+│   ├── trumpet
+│   │   ├── STKXyBGSGyE.mp4.npy
+│   │   └── ...
+│   └── ...
+│
+└── motion_features
+    ├── acoustic_guitar
+    │   ├── M3dekVSwNjY.mp4.npy
+    │   └── ...
+    ├── trumpet
+    │   ├── STKXyBGSGyE.mp4.npy
+    │   └── ...
+    └── ...
