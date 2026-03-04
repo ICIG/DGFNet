@@ -1,5 +1,5 @@
 配置环境：
-安装miniconda（如已安装miniconda或anaconda则跳过此步骤）
+安装miniconda（如已安装miniconda或anaconda则跳过此步骤）。安装教程：https://blog.csdn.net/weixin_39787913/article/details/145529639
 1. 拉取代码 git clone https://github.com/ICIG/DGFNet.git 或者直接下载代码到本地，再上传到服务器。
 2. cd DGFNet
 3. conda create --name DGF python=3.8
@@ -11,4 +11,4 @@
 9. pip install torchaudio-0.10.0+cu102-cp38-cp38-linux_x86_64.whl
 10. 使用如下命令安装detectron2  python -m pip install detectron2 -f \ https://dl.fbaipublicfiles.com/detectron2/wheels/cu102/torch1.10/index.html 安装文档页面如下https://detectron2-zhcn.readthedocs.io/zh-cn/latest/tutorials/install.html 
 11. pip install -U opencv-python
-12. 环境配置完成
+12. 环境配置完成，后续如需要添加其他包，建议使用清华源下载，链接如下：https://pypi.tuna.tsinghua.edu.cn/simple。使用方法： pip install xxx -i https://pypi.tuna.tsinghua.edu.cn/simple
