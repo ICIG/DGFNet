@@ -1,6 +1,6 @@
 配置环境：
 安装miniconda（如已安装miniconda或anaconda则跳过此步骤）
-1. 拉取代码
+1. 拉取代码 git clone https://github.com/JiabenChen/iQuery.git，或者直接下载代码到本地，再上传到服务器。
 2. cd DGFNet
 3. conda create --name DGF python=3.8
 4. conda activate DGF
